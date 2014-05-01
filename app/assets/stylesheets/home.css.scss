@@ -1,0 +1,274 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+html, body, div { margin: 0; padding: 0; border: 0 none; }
+
+.logo_box
+{
+	margin: 0;
+	padding: 0;
+	width:100%;
+	height:100px;
+	display:block;
+	//border: 1px solid black;
+}
+
+.header_logo
+{
+	padding:0;
+	margin-top:-4px;
+	margin-right:15px;
+	margin-left:15px;
+	display:block;
+	float:left;
+	font-family: 'Paytone One', sans-serif;
+	color:white;
+}
+
+.logo_box span
+{
+	display: block;
+	float:left;
+	font-weight: bold;
+	font-size: 24pt;
+	font-family: 'Paytone One', sans-serif;
+	color: white;
+	background-color: black;
+	padding: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0px;
+	margin-left: 0px;
+	margin-top: 90px;
+	//border: 1px solid black;
+}
+
+#page_title_container
+{
+	display:block;
+	width:90%;
+	float:right;
+	margin:0px;
+	//border: 1px solid black;
+}
+
+#page_title
+{
+	margin:0px;
+	padding:0px;
+	margin-right:20px;
+	margin-top:20px;
+	float:right;
+	font-family: 'Alfa Slab One', normal;
+	font-weight:400;
+	font-size:26pt;
+	//border: 1px solid black;
+}
+
+#main_content
+{
+	margin:0px;
+	margin-top:20px;
+	padding:0px;
+	width:90%;
+	float:right;
+	//background-color:#fff;
+	//border: 1px solid black;
+}
+
+#main_photo
+{
+	display:block;
+	width:80%;
+	margin: auto;
+	margin-top:20px;
+	margin-bottom:0px;
+	border-radius:10px;
+	//border: 1px solid black;
+}
+
+#caption
+{
+	font-family: 'Cabin', sans-serif;
+	font-size:12px;
+	float:right;
+	margin:0px;
+	padding:0px;
+	margin-right:100px;
+}
+
+.icon
+{
+	height:28px;
+	width:28px;
+	padding:0px;
+	margin:0px;
+	font-family: 'Cabin', sans-serif;
+	margin-top:14px;
+	margin-left:14px;
+	padding-left:14px;
+	border-left: 1px solid black;
+	display:inline;
+	//border: 1px solid black;
+}
+
+#navbar
+{
+	float:right;
+	display:block;
+	width:90%;
+	margin:0px;
+	padding:0px;
+	//border: 1px solid black;
+}
+
+#navbar a
+{
+	float:right;
+	font-family: 'Quicksand', sans-serif;
+	font-size:14pt;
+	font-weight:normal;
+	color:gray;
+	padding-bottom:12px;
+	padding-left:25px;
+	padding-right:25px;
+	margin-left:3px;
+	border-bottom: 3px solid black;
+	//border: 1px solid black;
+}
+
+#center_column
+{
+	width:790px;
+	background-color:#DEE8ED;
+	height:900px;
+	float:left;
+	padding-right:30px;
+	//border: 1px solid black;
+}
+
+#right_column
+{
+	display:block;
+	margin:0px auto;
+	padding:0px;
+	height:900px;
+	width:150px;
+	float:right;
+	background-color:#eee;
+	//border: 1px solid black;
+}
+
+body
+{
+	background-color:#666;
+	//background-image:url(background.gif);
+	//background-repeat:repeat;
+	//background-size:300px 300px;
+	//border: 1px solid black;
+}
+
+#social_media p
+{
+	font-family: 'Allura', cursive;
+	font-size:25pt;
+	color:orangered;
+	margin:0px;
+	padding:0px;
+	margin-top:20px;
+	margin-left:20px;
+	//border: 1px solid black;
+}
+
+#container
+{
+	overflow: hidden;
+  	width: 970px;
+  	margin: 60px auto;
+  	padding: 0px 0px 0px;
+ 	background: #bbb;
+	border: 1px solid #000;
+	//border-top:0px;
+	//border-bottom:0px;
+}
+
+.spacer
+{
+	position:fixed;
+	top:40px;
+	display:block;
+	width:100%;
+	margin-top: 0px;
+	padding: 0px;
+	height: 2px;
+	background-color:#777;
+	border-bottom: 2px solid black;
+}
+
+#fixed_header
+{
+	position:fixed;
+	left:0;
+	top:0;
+	display:block;
+	width:100%;
+	height:40px;
+	background-color:black;
+	padding:0;
+	margin:0;
+	opacity: 0.8;
+}
+
+#header
+{
+	position:relative;
+	display:block;
+	width:970px;
+	margin:10px auto;
+	padding:0px;
+	//border: 1px solid white;
+}
+
+#biopic
+{
+	margin-left:15px;
+	width:90px;
+	height:90px;
+	border-radius:10px;
+}
+
+#bio
+{
+	display:block;
+	width:100%;
+	font-family: 'Quicksand', sans-serif;
+	padding:15px;
+	font-size:8pt;
+}
+
+#header a
+{
+	font-family: 'Quicksand', sans-serif;
+	font-weight: normal;
+	color:#aaa;
+	font-size:10pt;
+	padding:12px;
+	margin:0;
+}
+
+#header a:hover
+{
+	color:white;
+}
+
+a:link
+{
+	padding:0px;
+	text-decoration: none;
+	color:black;
+	//border: 1px solid black;
+}
+
+

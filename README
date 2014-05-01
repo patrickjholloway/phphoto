@@ -1,0 +1,13 @@
+This application is a webpage generator.
+
+It allows quick deployment of a web page with content delivered and managed by an end user.
+
+It has predefined styles for the webpage with the ability to modify manually, but presets are easily swappable.
+
+The App enables a users to manage a static homepage with a Navbar. The end user can build up content of the webpage by generating pages linked to each other by the Navbar app. The Navbar app allows for nested structures that allow drop-down menus, folders, and automatically generated site map.
+
+The content that can be generated/managed within the app include media galleries for video and web, blogs, advertisements, static content presentation, contact pages, about pages, FAQs, and perhaps nested apps.
+
+The project should be written in HTML 5, CSS 3, Ruby on Rails, Javascript and HAML. The initial project will be delivered in RoR, HTML 4, ERB, and SASS.
+
+The design goals of the project are to learn RoR, CSS, and HTML, RESTful design principals, and to learn industry best practices.

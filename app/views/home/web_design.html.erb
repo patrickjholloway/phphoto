@@ -1,0 +1,41 @@
+<div id="container">
+	<div id="right_column">
+		<div id="social_media">
+			<p>about me</p>
+			<a href="#">
+				<%= image_tag("patrick.jpg", :alt => "Patrick Holloway", :id => "biopic" ) %>
+			</a>
+			<span id="bio">Blah blah blah...</span>
+			<p>follow me</p>
+			<a href="#">
+				<%= image_tag("facebook.png", :alt => "Facebook Logo", :class => "icon") %>
+			</a>
+			<a href="#">
+				<%= image_tag("twitter.png", :alt => "Twitter Logo", :class => "icon") %>
+			</a>
+		</div>
+	</div>
+	<div id="center_column">
+		<div class="logo_box">
+			<a href="#"><span>PH</span></a>
+		</div>
+		<div id="navbar">
+		   	<%= render 'home/web_design_navbar' %>	
+		</div>
+		<div id="page_title_container">
+			<p id="page_title">patrick holloway photography</p>
+		</div>
+		<div id="main_content">
+			<%= image_tag("image.jpg", :alt => "Navin and Family", :id => "main_photo") %>
+			<p id="caption">Navin and his family.</p>
+		</div>
+	</div>
+	<!---<div id="footer">
+		<a href="#">home</a>
+	</div>-->
+</div>
+
+<DIV CLASS="IMAGESLIDER">
+	<IMG></IMG>
+	<IMG></IMG><IMG></IMG><IMG></IMG><IMG></IMG><IMG></IMG>
+</DIV>

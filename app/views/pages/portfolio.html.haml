@@ -1,0 +1,51 @@
+%body
+  #fixed_header
+    #header
+      %span.header_logo PH
+      %a{href: "/"} HOME
+      %a#about_header{href: "http://patrickhollowayphotography.zenfolio.com/"} STORE
+      %a{href: "portfolio.html"} PHOTOGRAPHY
+      / %a{href: "webdesign.html"} WEB DESIGN
+      %a{href: "contact.html"} CONTACT
+    / %a{href: "http://www.facebook.com/patrickjholloway"}
+    /   %img.iconfb{alt: "facebook logo", src: "img/facebook.png"}/
+    %a{href: "http://www.twitter.com/digitalpixelpro"}
+      = image_tag "twitter.png", class: 'icon'
+    #gplus_button
+      %plusone{href: "http://www.patrickholloway.com/", size: "medium"}
+      :javascript
+        (function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/plusone.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();
+  .spacer
+  #container
+    #center_column
+      .logo_box
+        %a{href: "/"}
+          = image_tag "PHPlogo.png"
+      #center_column_headng
+      #navbar
+        %a{href: "/about"} ABOUT
+        %a{href: "/portfolio"} PORTFOLIO
+      #page_title_container
+        %h1#page_title patrick holloway photography
+
+      #main_content
+        #galleries
+          %h1 PORTFOLIO : :
+          #weddings.gallerylink
+            %a{href: "#"}
+              = image_tag "_MG_0007.jpg"
+            %h3 Bleep
+          #business.gallerylink
+            %a{href: "#"}
+              = image_tag "_MG_0010.jpg"
+            %h3 Blop
+          #musicians.gallerylink
+            %a{href: "#"}
+              = image_tag "_MG_0098.jpg"
+            %h3 Bloop
+          #fineart.gallerylink
+            %a{href: "#"}
+              = image_tag "_MG_0057.jpg"
+            %h3 Blorp
+    #footer
+      ©2012 Patrick Holloway Photography • Medford MA 02155 • 781.960.3127 • patrickjholloway@gmail.com

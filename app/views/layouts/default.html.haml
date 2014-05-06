@@ -1,0 +1,36 @@
+!!!
+%html
+  %head
+    = stylesheet_link_tag "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+    %link{href: "http://fonts.googleapis.com/css?family=Alfa+Slab+One|Cabin|News+Cycle|Federo|Quicksand|Paytone+One|Wire+One|Tenor+Sans|Anton|Amethysta|Vollkorn|Francois+One|Marvel|Hammersmith+One", rel: "stylesheet", type: "text/css"}
+    %link{href: "http://fonts.googleapis.com/css?family=Allura", rel: "stylesheet", type: "text/css"}
+    %link{href: "http://fonts.googleapis.com/css?family=Quicksand:300|Marvel", rel: "stylesheet", type: "text/css"}
+    %link{href: "http://fonts.googleapis.com/css?family=Open+Sans:400,300", rel: "stylesheet", type: "text/css"}
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %title Professional Web Design and Photography
+    = render 'shared/googlefonts'
+
+    %title Patrick Holloway
+
+    = render 'shared/fixed_header'
+  
+    .spacer
+
+  %body
+    #container
+      #center_column
+        .logo_box
+          %a{href: "/"}
+            = image_tag "PHPlogo.png"
+        #center_column_headng
+        #navbar
+          %a{href: "portfolio.html"} Photography
+          / %a{href: "webdesign.html"} Web Design
+        #page_title_container
+          %h1#page_title patrick holloway
+        #main_content
+          = yield
+        #footer
+          ©2014 Patrick Holloway Photography • Lowell MA 01852 • patrickjholloway@gmail.com

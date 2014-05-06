@@ -7,6 +7,10 @@ gem 'rails', '4.1.0'
 
 gem 'sqlite3'
 
+group :development do
+  gem 'pry'
+end
+
 group :test do
   gem 'rspec-rails'
   gem 'capybara-webkit'
@@ -23,6 +27,7 @@ group :assets do
   gem 'uglifier'
 end
 
+gem 'devise'
 gem 'paperclip'
 gem 'jquery-rails'
 

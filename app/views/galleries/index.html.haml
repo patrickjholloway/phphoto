@@ -1,0 +1,15 @@
+%h2 Galleries
+%table
+  %thead
+    %tr
+      %th Name
+      %th Photos
+      %th Created
+  %tbody
+    - @galleries.each do |gallery|
+      %tr
+        %td
+          %strong
+            = gallery.name
+        %td #{gallery.photos.count} photos
+        %td= time_format(gallery.created_at)

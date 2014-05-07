@@ -1,0 +1,4 @@
+%h2= @gallery.name
+.gallery
+  - @gallery.photos.each do |photo|
+    = image_tag photo.image.url

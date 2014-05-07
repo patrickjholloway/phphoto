@@ -1,7 +1,6 @@
 class GalleriesController < ApplicationController
-  before_action :authenticate_admin!
   layout "default"
-  def index
-    @galleries = Gallery.all
+  def show
+    @gallery = Gallery.find(params[:id])
   end
 end

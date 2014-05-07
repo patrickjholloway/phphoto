@@ -30,6 +30,15 @@
   background-color: white;
 }
 
+.gallery img{
+  width: 800px;
+  float: left;
+  clear: both;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: white;
+}
+
 a //removes underlined anchor tags from Opera
 {
   text-decoration:none;

@@ -14,7 +14,7 @@
       %h1 PORTFOLIO : :
       - @galleries.each do |gallery|
         .gallerylink
-          %a{href: "#"}
+          = link_to galleries_path(gallery) do
             -if gallery.photos.any?
               = image_tag gallery.photos.first.image.url(:thumb)
           %h3= gallery.name

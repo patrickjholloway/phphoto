@@ -10,7 +10,7 @@ Phphoto::Application.routes.draw do
   # Keep in mind you can assign values other than :controller and :action
 
   get '/portfolio' => 'pages#portfolio'
-
+  get '/portfolio/:id' => 'galleries#show', as: "galleries"
 
   scope :admin do
     resources :galleries

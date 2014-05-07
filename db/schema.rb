@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140506005750) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "admins", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -28,8 +31,8 @@ ActiveRecord::Schema.define(version: 20140506005750) do
     t.datetime "updated_at"
   end
 
-  add_index "admins", ["email"], name: "index_admins_on_email", unique: true
-  add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true
+  add_index "admins", ["email"], name: "index_admins_on_email", unique: true, using: :btree
+  add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
 
   create_table "galleries", force: true do |t|
     t.datetime "created_at"
@@ -39,11 +42,15 @@ ActiveRecord::Schema.define(version: 20140506005750) do
 
   create_table "photos", force: true do |t|
     t.integer  "gallery_id"
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "photos", ["gallery_id"], name: "index_photos_on_gallery_id"
+  add_index "photos", ["gallery_id"], name: "index_photos_on_gallery_id", using: :btree
 
   create_table "posts", force: true do |t|
     t.string   "title"

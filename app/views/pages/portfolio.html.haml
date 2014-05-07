@@ -11,23 +11,12 @@
       %h1#page_title patrick holloway photography
 
     #main_content
-      #galleries
-        %h1 PORTFOLIO : :
-        #weddings.gallerylink
+      %h1 PORTFOLIO : :
+      - @galleries.each do |gallery|
+        .gallerylink
           %a{href: "#"}
-            = image_tag "_MG_0007.jpg"
-          %h3 Bleep
-        #business.gallerylink
-          %a{href: "#"}
-            = image_tag "_MG_0010.jpg"
-          %h3 Blop
-        #musicians.gallerylink
-          %a{href: "#"}
-            = image_tag "_MG_0098.jpg"
-          %h3 Bloop
-        #fineart.gallerylink
-          %a{href: "#"}
-            = image_tag "_MG_0057.jpg"
-          %h3 Blorp
+            -if gallery.photos.any?
+              = image_tag gallery.photos.first.image.url(:thumb)
+          %h3= gallery.name
   #footer
     ©2012 Patrick Holloway Photography • Medford MA 02155 • 781.960.3127 • patrickjholloway@gmail.com

@@ -5,6 +5,7 @@ class PagesController < ApplicationController
   end
 
   def portfolio
+    @galleries = Gallery.all
   end
 
 end

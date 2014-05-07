@@ -30,13 +30,25 @@
   background-color: white;
 }
 
-.gallery img{
-  width: 800px;
-  float: left;
-  clear: both;
-  padding: 10px;
-  margin-bottom: 10px;
-  background: white;
+.gallery-thumbs {
+  position: relative;
+  margin-bottom: 500px;
+  .photo-wrapper{
+    height: 180px;
+    width: 180px;
+    display: block;
+    overflow:hidden;
+    float: left;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    background: white;
+  }
+}
+
+
+.fullpic img{
+  max-width: 1120px;
+  margin-bottom: 100px;
 }
 
 a //removes underlined anchor tags from Opera
@@ -113,7 +125,7 @@ html, body, div {
   padding:0px;
   width:80%;
   float:left;
-  height:950px;
+  min-height:950px;
   //background-color:#fff;
   //border: 1px solid black;
 }
@@ -248,9 +260,8 @@ div.classy
 
 #center_column
 {
-  width:960px;
+  width:1260px;
   background-color:#DEE8ED;
-  height:1020px;
   float:left;
   padding-right:30px;
   //border: 1px solid black;
@@ -268,14 +279,13 @@ div.classy
 {
   position:relative;
   overflow: hidden;
-    width: 960px;
+    width: 1260px;
     margin: 55px auto;
     padding: 0px 0px 0px;
   background: #bbb;
   border: 1px solid #000;
   //border-top:0px;
   //border-bottom:0px;
-  height:1045px;
 }
 
 
@@ -455,7 +465,7 @@ body
   padding-top:5px;
   clear:both;
   height:19px;
-  width:960px;
+  width:1260px;
   text-align:center;
   font-family: 'Cabin', sans-serif;
   font-size:12px;

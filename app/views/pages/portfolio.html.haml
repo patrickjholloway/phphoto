@@ -12,11 +12,11 @@
 
     #main_content
       %h1 PORTFOLIO : :
-      - @galleries.each do |gallery|
-        .gallerylink
-          = link_to galleries_path(gallery) do
-            -if gallery.photos.any?
-              = image_tag gallery.photos.first.image.url(:thumb)
-          %h3= gallery.name
+        - @galleries.each do |gallery|
+          .gallerylink
+            = link_to galleries_path(gallery) do
+              -if gallery.photos.any?
+                = image_tag gallery.photos.first.image.url(:thumb)
+            %h3= gallery.name
   #footer
     ©2012 Patrick Holloway Photography • Medford MA 02155 • 781.960.3127 • patrickjholloway@gmail.com

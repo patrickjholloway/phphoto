@@ -12,6 +12,8 @@ Phphoto::Application.routes.draw do
   get '/portfolio' => 'pages#portfolio'
   get '/portfolio/:id' => 'galleries#show', as: "galleries"
 
+  resources :photos
+
   scope :admin do
     resources :galleries
   end
